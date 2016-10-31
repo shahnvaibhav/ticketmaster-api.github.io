@@ -1,0 +1,218 @@
+<div class="story">
+<h1></h1>
+<div class="path">stories/site/widgets/CalendarWidget.story</div>
+<div class="meta">
+<div class="keyword">Meta:</div>
+<div class="property">@debug </div>
+</div>
+<div class="narrative"><h2>Narrative:</h2>
+<div class="element inOrderTo"><span class="keyword inOrderTo">In order to</span> setup Calendar Widget</div>
+<div class="element asA"><span class="keyword asA">As a</span> developer</div>
+<div class="element iWantTo"><span class="keyword iWantTo">I want to</span> use the widget configurator to customize the layout of the widget,
+and have ability to grab a small code snippet to insert into 3-rd party websites</div>
+</div>
+<div class="scenario">
+<h2>Scenario: (/products-and-docs/widgets/calendar/) TECHNICAL TAB - Check that required fields are not empty</h2>
+<div class="step successful">Given open Calendar Widget page</div>
+<div class="step successful">Then the required fields are not empty on the Calendar Widget page</div>
+</div>
+<div class="scenario">
+<h2>Scenario: (/products-and-docs/widgets/calendar/) TECHNICAL TAB - Check that embed code functionality works properly</h2>
+<div class="step failed">Given open Calendar Widget page <span class="keyword failed">(FAILED)</span><br/><span class="message failed">net.serenitybdd.core.exceptions.SerenityManagedException: Error communicating with the remote browser. It may have died.
+Build info: version: '2.53.0', revision: '35ae25b1534ae328c771e0856c93e187490ca824', time: '2016-03-15 10:43:46'
+System info: host: 'testing-worker-linux-docker-dc772945-3439-linux-2', ip: '172.17.1.25', os.name: 'Linux', os.arch: 'amd64', os.version: '3.13.0-40-generic', java.version: '1.8.0_31'
+Driver info: driver.version: RemoteWebDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=31.0, platform=LINUX, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 17833b0a-0fb2-4dcc-8ba4-e6993965298a</span></div>
+<div class="step notPerformed">And change values for: <span class="step parameter">apiKey,keyword,zipCode,radius</span> <span class="keyword notPerformed">(NOT PERFORMED)</span></div>
+<div class="step notPerformed">And store values of: <span class="step parameter">apiKey,keyword,zipCode,radius</span> <span class="keyword notPerformed">(NOT PERFORMED)</span></div>
+<div class="step notPerformed">When click on &quot;Get code&quot; button <span class="keyword notPerformed">(NOT PERFORMED)</span></div>
+<div class="step notPerformed">Then the pop-up Embedded Code is opened <span class="keyword notPerformed">(NOT PERFORMED)</span></div>
+<div class="step notPerformed">And embedded html code contains stored values of: <span class="step parameter">apiKey,keyword,zipCode,radius</span> <span class="keyword notPerformed">(NOT PERFORMED)</span></div>
+<pre class="failure">net.serenitybdd.core.exceptions.SerenityManagedException: Error communicating with the remote browser. It may have died.
+Build info: version: '2.53.0', revision: '35ae25b1534ae328c771e0856c93e187490ca824', time: '2016-03-15 10:43:46'
+System info: host: 'testing-worker-linux-docker-dc772945-3439-linux-2', ip: '172.17.1.25', os.name: 'Linux', os.arch: 'amd64', os.version: '3.13.0-40-generic', java.version: '1.8.0_31'
+Driver info: driver.version: RemoteWebDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=31.0, platform=LINUX, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 17833b0a-0fb2-4dcc-8ba4-e6993965298a
+	at net.serenitybdd.core.exceptions.SerenityManagedException.detachedCopyOf(SerenityManagedException.java:20)
+	at net.thucydides.core.steps.StepInterceptor.runTestStep(StepInterceptor.java:317)
+	at net.thucydides.core.steps.StepInterceptor.testStepResult(StepInterceptor.java:130)
+	at net.thucydides.core.steps.StepInterceptor.intercept(StepInterceptor.java:57)
+	at bla.tm.steps.products_and_docs.PD_Widget_CalendarSteps$$EnhancerByCGLIB$$a61204d0.openPage(&lt;generated&gt;)
+	at bla.tm.definitions.site.products_and_docs.PD_Widget_CalendarDefinition.openCalendarWidgetPage(PD_Widget_CalendarDefinition.java:15)
+	(reflection-invoke)
+	at org.jbehave.core.steps.StepCreator$ParametrisedStep.perform(StepCreator.java:599)
+	at org.jbehave.core.embedder.PerformableTree$FineSoFar.run(PerformableTree.java:340)
+...</pre>
+</div>
+<div class="scenario">
+<h2>Scenario: (/products-and-docs/widgets/calendar/) TECHNICAL TAB - Check that Country field is changed accordingly Zip Code</h2>
+<div class="examples">
+<h3>Examples:</h3>
+<div class="step">Given open Calendar Widget page</div>
+<div class="step">When change value of Zip Code &lt;zipCode&gt;</div>
+<div class="step">Then the Country field contains appropriate value &lt;countryName&gt;</div>
+<table>
+<thead>
+<tr>
+<th>zipCode</th><th>countryName</th></tr>
+</thead>
+<tbody>
+<tr>
+<td>01000</td><td>France</td></tr>
+<tr>
+<td>5555</td><td>Australia</td></tr>
+</tbody>
+</table>
+
+<h3 class="example">Example: {zipCode=01000, countryName=France, debug=}</h3>
+<div class="step successful">Given open Calendar Widget page</div>
+<div class="step failed">When change value of Zip Code <span class="step parameter">01000</span> <span class="keyword failed">(FAILED)</span><br/><span class="message failed">net.serenitybdd.core.exceptions.SerenityManagedException: Error communicating with the remote browser. It may have died.
+Build info: version: '2.53.0', revision: '35ae25b1534ae328c771e0856c93e187490ca824', time: '2016-03-15 10:43:46'
+System info: host: 'testing-worker-linux-docker-dc772945-3439-linux-2', ip: '172.17.1.25', os.name: 'Linux', os.arch: 'amd64', os.version: '3.13.0-40-generic', java.version: '1.8.0_31'
+Driver info: driver.version: RemoteWebDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=31.0, platform=LINUX, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: bfed1d44-90cd-4092-b226-1d594d232246</span></div>
+<div class="step notPerformed">Then the Country field contains appropriate value <span class="step parameter">France</span> <span class="keyword notPerformed">(NOT PERFORMED)</span></div>
+
+<h3 class="example">Example: {zipCode=5555, countryName=Australia, debug=}</h3>
+<div class="step failed">Given open Calendar Widget page <span class="keyword failed">(FAILED)</span><br/><span class="message failed">net.serenitybdd.core.exceptions.SerenityManagedException: Error communicating with the remote browser. It may have died.
+Build info: version: '2.53.0', revision: '35ae25b1534ae328c771e0856c93e187490ca824', time: '2016-03-15 10:43:46'
+System info: host: 'testing-worker-linux-docker-dc772945-3439-linux-2', ip: '172.17.1.25', os.name: 'Linux', os.arch: 'amd64', os.version: '3.13.0-40-generic', java.version: '1.8.0_31'
+Driver info: driver.version: RemoteWebDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=31.0, platform=LINUX, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: bfed1d44-90cd-4092-b226-1d594d232246</span></div>
+<div class="step notPerformed">When change value of Zip Code <span class="step parameter">5555</span> <span class="keyword notPerformed">(NOT PERFORMED)</span></div>
+<div class="step notPerformed">Then the Country field contains appropriate value <span class="step parameter">Australia</span> <span class="keyword notPerformed">(NOT PERFORMED)</span></div>
+</div>
+<pre class="failure">net.serenitybdd.core.exceptions.SerenityManagedException: Error communicating with the remote browser. It may have died.
+Build info: version: '2.53.0', revision: '35ae25b1534ae328c771e0856c93e187490ca824', time: '2016-03-15 10:43:46'
+System info: host: 'testing-worker-linux-docker-dc772945-3439-linux-2', ip: '172.17.1.25', os.name: 'Linux', os.arch: 'amd64', os.version: '3.13.0-40-generic', java.version: '1.8.0_31'
+Driver info: driver.version: RemoteWebDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=31.0, platform=LINUX, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: bfed1d44-90cd-4092-b226-1d594d232246
+	at net.serenitybdd.core.exceptions.SerenityManagedException.detachedCopyOf(SerenityManagedException.java:20)
+	at net.thucydides.core.steps.StepInterceptor.runTestStep(StepInterceptor.java:317)
+	at net.thucydides.core.steps.StepInterceptor.testStepResult(StepInterceptor.java:130)
+	at net.thucydides.core.steps.StepInterceptor.intercept(StepInterceptor.java:57)
+	at bla.tm.steps.products_and_docs.PD_Widget_CalendarSteps$$EnhancerByCGLIB$$a61204d0.openPage(&lt;generated&gt;)
+	at bla.tm.definitions.site.products_and_docs.PD_Widget_CalendarDefinition.openCalendarWidgetPage(PD_Widget_CalendarDefinition.java:15)
+	(reflection-invoke)
+	at org.jbehave.core.steps.StepCreator$ParametrisedStep.perform(StepCreator.java:599)
+	at org.jbehave.core.embedder.PerformableTree$FineSoFar.run(PerformableTree.java:340)
+...</pre>
+</div>
+<div class="scenario">
+<h2>Scenario: (/products-and-docs/widgets/calendar/) TECHNICAL TAB - Check RESET button functionality</h2>
+<div class="step failed">Given open Calendar Widget page <span class="keyword failed">(FAILED)</span><br/><span class="message failed">net.serenitybdd.core.exceptions.SerenityManagedException: Error communicating with the remote browser. It may have died.
+Build info: version: '2.53.0', revision: '35ae25b1534ae328c771e0856c93e187490ca824', time: '2016-03-15 10:43:46'
+System info: host: 'testing-worker-linux-docker-dc772945-3439-linux-2', ip: '172.17.1.25', os.name: 'Linux', os.arch: 'amd64', os.version: '3.13.0-40-generic', java.version: '1.8.0_31'
+Driver info: driver.version: RemoteWebDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=31.0, platform=LINUX, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 5063793d-7dd8-465f-b6ca-7f1515983cc2</span></div>
+<div class="step notPerformed">And store values of: <span class="step parameter">apiKey,keyword,zipCode,radius</span> <span class="keyword notPerformed">(NOT PERFORMED)</span></div>
+<div class="step notPerformed">And change values for: <span class="step parameter">apiKey,keyword,zipCode,radius</span> <span class="keyword notPerformed">(NOT PERFORMED)</span></div>
+<div class="step notPerformed">When click reset button <span class="keyword notPerformed">(NOT PERFORMED)</span></div>
+<div class="step notPerformed">Then values of fields: <span class="step parameter">apiKey,keyword,zipCode,radius</span> equals stored values <span class="keyword notPerformed">(NOT PERFORMED)</span></div>
+<pre class="failure">net.serenitybdd.core.exceptions.SerenityManagedException: Error communicating with the remote browser. It may have died.
+Build info: version: '2.53.0', revision: '35ae25b1534ae328c771e0856c93e187490ca824', time: '2016-03-15 10:43:46'
+System info: host: 'testing-worker-linux-docker-dc772945-3439-linux-2', ip: '172.17.1.25', os.name: 'Linux', os.arch: 'amd64', os.version: '3.13.0-40-generic', java.version: '1.8.0_31'
+Driver info: driver.version: RemoteWebDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=31.0, platform=LINUX, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 5063793d-7dd8-465f-b6ca-7f1515983cc2
+	at net.serenitybdd.core.exceptions.SerenityManagedException.detachedCopyOf(SerenityManagedException.java:20)
+	at net.thucydides.core.steps.StepInterceptor.runTestStep(StepInterceptor.java:317)
+	at net.thucydides.core.steps.StepInterceptor.testStepResult(StepInterceptor.java:130)
+	at net.thucydides.core.steps.StepInterceptor.intercept(StepInterceptor.java:57)
+	at bla.tm.steps.products_and_docs.PD_Widget_CalendarSteps$$EnhancerByCGLIB$$a61204d0.openPage(&lt;generated&gt;)
+	at bla.tm.definitions.site.products_and_docs.PD_Widget_CalendarDefinition.openCalendarWidgetPage(PD_Widget_CalendarDefinition.java:15)
+	(reflection-invoke)
+	at org.jbehave.core.steps.StepCreator$ParametrisedStep.perform(StepCreator.java:599)
+	at org.jbehave.core.embedder.PerformableTree$FineSoFar.run(PerformableTree.java:340)
+...</pre>
+</div>
+<div class="scenario">
+<h2>Scenario: (/products-and-docs/widgets/calendar/) Check RESET button functionality on Embedded Code Pop-up window</h2>
+<div class="step successful">Given open Calendar Widget page</div>
+<div class="step failed">And store values of: <span class="step parameter">apiKey,keyword,zipCode,radius</span> <span class="keyword failed">(FAILED)</span><br/><span class="message failed">net.serenitybdd.core.exceptions.SerenityManagedException: Connect to 127.0.0.1:7061 [/127.0.0.1] failed: Connection refused
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.53.0', revision: '35ae25b1534ae328c771e0856c93e187490ca824', time: '2016-03-15 10:43:46'
+System info: host: 'testing-worker-linux-docker-dc772945-3439-linux-2', ip: '172.17.1.25', os.name: 'Linux', os.arch: 'amd64', os.version: '3.13.0-40-generic', java.version: '1.8.0_31'
+Driver info: driver.version: unknown</span></div>
+<div class="step notPerformed">And change values for: <span class="step parameter">apiKey,keyword,zipCode,radius</span> <span class="keyword notPerformed">(NOT PERFORMED)</span></div>
+<div class="step notPerformed">When click reset button <span class="keyword notPerformed">(NOT PERFORMED)</span></div>
+<div class="step notPerformed">And click on &quot;Get code&quot; button <span class="keyword notPerformed">(NOT PERFORMED)</span></div>
+<div class="step notPerformed">Then the pop-up Embedded Code is opened <span class="keyword notPerformed">(NOT PERFORMED)</span></div>
+<div class="step notPerformed">And embedded html code contains stored values of: <span class="step parameter">apiKey,keyword,zipCode,radius</span> <span class="keyword notPerformed">(NOT PERFORMED)</span></div>
+<pre class="failure">net.serenitybdd.core.exceptions.SerenityManagedException: Connect to 127.0.0.1:7061 [/127.0.0.1] failed: Connection refused
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.53.0', revision: '35ae25b1534ae328c771e0856c93e187490ca824', time: '2016-03-15 10:43:46'
+System info: host: 'testing-worker-linux-docker-dc772945-3439-linux-2', ip: '172.17.1.25', os.name: 'Linux', os.arch: 'amd64', os.version: '3.13.0-40-generic', java.version: '1.8.0_31'
+Driver info: driver.version: unknown
+	at net.serenitybdd.core.exceptions.SerenityManagedException.detachedCopyOf(SerenityManagedException.java:20)
+	at net.thucydides.core.steps.StepInterceptor.runTestStep(StepInterceptor.java:317)
+	at net.thucydides.core.steps.StepInterceptor.testStepResult(StepInterceptor.java:130)
+	at net.thucydides.core.steps.StepInterceptor.intercept(StepInterceptor.java:57)
+	at bla.tm.steps.products_and_docs.PD_Widget_CalendarSteps$$EnhancerByCGLIB$$a61204d0.storeValue(&lt;generated&gt;)
+	at bla.tm.definitions.site.widgets.CalendarWidgetDefinition.storeValuesOf(CalendarWidgetDefinition.java:30)
+	(reflection-invoke)
+	at org.jbehave.core.steps.StepCreator$ParametrisedStep.perform(StepCreator.java:599)
+	at org.jbehave.core.embedder.PerformableTree$FineSoFar.run(PerformableTree.java:340)
+...</pre>
+</div>
+<div class="scenario">
+<h2>Scenario: (/products-and-docs/widgets/calendar/) TECHNICAL TAB - Check links</h2>
+<div class="step successful">Given open Calendar Widget page</div>
+<div class="step failed">When I click on the 'Get your own' link to get api key <span class="keyword failed">(FAILED)</span><br/><span class="message failed">net.serenitybdd.core.exceptions.SerenityManagedException: Error communicating with the remote browser. It may have died.
+Build info: version: '2.53.0', revision: '35ae25b1534ae328c771e0856c93e187490ca824', time: '2016-03-15 10:43:46'
+System info: host: 'testing-worker-linux-docker-dc772945-3439-linux-2', ip: '172.17.1.25', os.name: 'Linux', os.arch: 'amd64', os.version: '3.13.0-40-generic', java.version: '1.8.0_31'
+Driver info: driver.version: RemoteWebDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=31.0, platform=LINUX, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 73c3d9d8-69bb-49ba-9611-0673eae732d8</span></div>
+<div class="step notPerformed">Then The page is opened with url <span class="step parameter">https://developer-acct.ticketmaster.com</span> <span class="keyword notPerformed">(NOT PERFORMED)</span></div>
+<pre class="failure">net.serenitybdd.core.exceptions.SerenityManagedException: Error communicating with the remote browser. It may have died.
+Build info: version: '2.53.0', revision: '35ae25b1534ae328c771e0856c93e187490ca824', time: '2016-03-15 10:43:46'
+System info: host: 'testing-worker-linux-docker-dc772945-3439-linux-2', ip: '172.17.1.25', os.name: 'Linux', os.arch: 'amd64', os.version: '3.13.0-40-generic', java.version: '1.8.0_31'
+Driver info: driver.version: RemoteWebDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=31.0, platform=LINUX, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 73c3d9d8-69bb-49ba-9611-0673eae732d8
+	at net.serenitybdd.core.exceptions.SerenityManagedException.detachedCopyOf(SerenityManagedException.java:20)
+	at net.thucydides.core.steps.StepInterceptor.runTestStep(StepInterceptor.java:317)
+	at net.thucydides.core.steps.StepInterceptor.testStepResult(StepInterceptor.java:130)
+	at net.thucydides.core.steps.StepInterceptor.intercept(StepInterceptor.java:57)
+	at bla.tm.steps.products_and_docs.PD_Widget_CountdownSteps$$EnhancerByCGLIB$$53e7a1ed.clickOnGetYourOwn(&lt;generated&gt;)
+	at bla.tm.definitions.site.widgets.CountdownWidgetDefinition.clickOnTheGetYourOwnLinkToGetApiKey(CountdownWidgetDefinition.java:118)
+	(reflection-invoke)
+	at org.jbehave.core.steps.StepCreator$ParametrisedStep.perform(StepCreator.java:599)
+	at org.jbehave.core.embedder.PerformableTree$FineSoFar.run(PerformableTree.java:340)
+...</pre>
+</div>
+<div class="scenario">
+<h2>Scenario: (/products-and-docs/widgets/calendar/) Event message - Check event message for invalid API Key</h2>
+<div class="step failed">Given open Calendar Widget page <span class="keyword failed">(FAILED)</span><br/><span class="message failed">net.serenitybdd.core.exceptions.SerenityManagedException: Error communicating with the remote browser. It may have died.
+Build info: version: '2.53.0', revision: '35ae25b1534ae328c771e0856c93e187490ca824', time: '2016-03-15 10:43:46'
+System info: host: 'testing-worker-linux-docker-dc772945-3439-linux-2', ip: '172.17.1.25', os.name: 'Linux', os.arch: 'amd64', os.version: '3.13.0-40-generic', java.version: '1.8.0_31'
+Driver info: driver.version: FirefoxDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=31.0, platform=LINUX, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 6ba6fce0-ec59-49c2-bdab-a67a4691952e</span></div>
+<div class="step notPerformed">And enter custom ApiKey <span class="step parameter">invalidApiKey123</span> <span class="keyword notPerformed">(NOT PERFORMED)</span></div>
+<div class="step notPerformed">Then the event message is shown &quot;No results were found&quot; <span class="keyword notPerformed">(NOT PERFORMED)</span></div>
+<pre class="failure">net.serenitybdd.core.exceptions.SerenityManagedException: Error communicating with the remote browser. It may have died.
+Build info: version: '2.53.0', revision: '35ae25b1534ae328c771e0856c93e187490ca824', time: '2016-03-15 10:43:46'
+System info: host: 'testing-worker-linux-docker-dc772945-3439-linux-2', ip: '172.17.1.25', os.name: 'Linux', os.arch: 'amd64', os.version: '3.13.0-40-generic', java.version: '1.8.0_31'
+Driver info: driver.version: FirefoxDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=31.0, platform=LINUX, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 6ba6fce0-ec59-49c2-bdab-a67a4691952e
+	at net.serenitybdd.core.exceptions.SerenityManagedException.detachedCopyOf(SerenityManagedException.java:20)
+	at net.thucydides.core.steps.StepInterceptor.runTestStep(StepInterceptor.java:317)
+	at net.thucydides.core.steps.StepInterceptor.testStepResult(StepInterceptor.java:130)
+	at net.thucydides.core.steps.StepInterceptor.intercept(StepInterceptor.java:57)
+	at bla.tm.steps.products_and_docs.PD_Widget_CalendarSteps$$EnhancerByCGLIB$$a61204d0.openPage(&lt;generated&gt;)
+	at bla.tm.definitions.site.products_and_docs.PD_Widget_CalendarDefinition.openCalendarWidgetPage(PD_Widget_CalendarDefinition.java:15)
+	(reflection-invoke)
+	at org.jbehave.core.steps.StepCreator$ParametrisedStep.perform(StepCreator.java:599)
+	at org.jbehave.core.embedder.PerformableTree$FineSoFar.run(PerformableTree.java:340)
+...</pre>
+</div>
+</div>

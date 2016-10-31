@@ -1,0 +1,69 @@
+<story path="stories/site/products_and_docs/PD_SDKs.story" title="">
+<narrative keyword="Narrative:">
+  <inOrderTo keyword="As a">test engineer</inOrderTo>
+  <asA keyword="I want to">test Ticket Master Developer&apos;s site</asA>
+  <iWantTo keyword="So that">I test SDK-s Page of Ticket Master Developer&apos;s site</iWantTo>
+</narrative>
+<scenario keyword="Scenario:" title="(/products-and-docs/sdks/) Verification for general page&apos;s elements">
+<step outcome="successful">Given open SDKs page</step>
+<step outcome="successful">Then check general page elements for SDKs Page, where DISQUS = <parameter>true</parameter> and LeftMenu = <parameter>true</parameter></step>
+</scenario>
+<scenario keyword="Scenario:" title="(products-and-docs/sdks/) Verification for all the page&apos;s links">
+<examples keyword="Examples:">
+<step>Given open SDKs page</step>
+<step>When check visibility and click &lt;elementKey&gt; element of SDKs page</step>
+<step>Then check that new page opened from SDKs page has &lt;pageURL&gt; and &lt;pageTitle&gt;</step>
+<parameters>
+<names><name>elementKey</name><name>pageURL</name><name>pageTitle</name></names>
+<values><value>SDK-Java Image</value><value>https://github.com/ticketmaster-api/sdk-java</value><value>//h1[@class=&apos;public &apos;]/strong/a</value></values>
+<values><value>SDK-JavaScript Image</value><value>https://github.com/ticketmaster-api/sdk-javascript</value><value>//h1[@class=&apos;public &apos;]/strong/a</value></values>
+<values><value>SDK-Scala Image</value><value>https://github.com/ticketmaster-api/sdk-scala</value><value>//h1[@class=&apos;public &apos;]/strong/a</value></values>
+</parameters>
+
+<example keyword="Example:">{elementKey=SDK-Java Image, pageURL=https://github.com/ticketmaster-api/sdk-java, pageTitle=//h1[@class=&apos;public &apos;]/strong/a}</example>
+<step outcome="successful">Given open SDKs page</step>
+<step outcome="failed" keyword="FAILED">When check visibility and click <parameter>SDK-Java Image</parameter> element of SDKs page<failure>net.serenitybdd.core.exceptions.SerenityManagedException: Timed out after 2 seconds. Element not found
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.53.0&apos;, revision: &apos;35ae25b1534ae328c771e0856c93e187490ca824&apos;, time: &apos;2016-03-15 10:43:46&apos;
+System info: host: &apos;testing-worker-linux-docker-dc772945-3439-linux-2&apos;, ip: &apos;172.17.1.25&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;3.13.0-40-generic&apos;, java.version: &apos;1.8.0_31&apos;
+Driver info: driver.version: unknown</failure></step>
+<step outcome="notPerformed" keyword="NOT PERFORMED">Then check that new page opened from SDKs page has <parameter>https://github.com/ticketmaster-api/sdk-java</parameter> and <parameter>//h1[@class=&apos;public &apos;]/strong/a</parameter></step>
+
+<example keyword="Example:">{elementKey=SDK-JavaScript Image, pageURL=https://github.com/ticketmaster-api/sdk-javascript, pageTitle=//h1[@class=&apos;public &apos;]/strong/a}</example>
+<step outcome="failed" keyword="FAILED">Given open SDKs page<failure>net.serenitybdd.core.exceptions.SerenityManagedException: Error communicating with the remote browser. It may have died.
+Build info: version: &apos;2.53.0&apos;, revision: &apos;35ae25b1534ae328c771e0856c93e187490ca824&apos;, time: &apos;2016-03-15 10:43:46&apos;
+System info: host: &apos;testing-worker-linux-docker-dc772945-3439-linux-2&apos;, ip: &apos;172.17.1.25&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;3.13.0-40-generic&apos;, java.version: &apos;1.8.0_31&apos;
+Driver info: driver.version: RemoteWebDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=31.0, platform=LINUX, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: eda9672f-b1f5-4d97-b270-477af4f1502f</failure></step>
+<step outcome="notPerformed" keyword="NOT PERFORMED">When check visibility and click <parameter>SDK-JavaScript Image</parameter> element of SDKs page</step>
+<step outcome="notPerformed" keyword="NOT PERFORMED">Then check that new page opened from SDKs page has <parameter>https://github.com/ticketmaster-api/sdk-javascript</parameter> and <parameter>//h1[@class=&apos;public &apos;]/strong/a</parameter></step>
+
+<example keyword="Example:">{elementKey=SDK-Scala Image, pageURL=https://github.com/ticketmaster-api/sdk-scala, pageTitle=//h1[@class=&apos;public &apos;]/strong/a}</example>
+<step outcome="failed" keyword="FAILED">Given open SDKs page<failure>net.serenitybdd.core.exceptions.SerenityManagedException: Error communicating with the remote browser. It may have died.
+Build info: version: &apos;2.53.0&apos;, revision: &apos;35ae25b1534ae328c771e0856c93e187490ca824&apos;, time: &apos;2016-03-15 10:43:46&apos;
+System info: host: &apos;testing-worker-linux-docker-dc772945-3439-linux-2&apos;, ip: &apos;172.17.1.25&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;3.13.0-40-generic&apos;, java.version: &apos;1.8.0_31&apos;
+Driver info: driver.version: RemoteWebDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=31.0, platform=LINUX, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: eda9672f-b1f5-4d97-b270-477af4f1502f</failure></step>
+<step outcome="notPerformed" keyword="NOT PERFORMED">When check visibility and click <parameter>SDK-Scala Image</parameter> element of SDKs page</step>
+<step outcome="notPerformed" keyword="NOT PERFORMED">Then check that new page opened from SDKs page has <parameter>https://github.com/ticketmaster-api/sdk-scala</parameter> and <parameter>//h1[@class=&apos;public &apos;]/strong/a</parameter></step>
+</examples>
+<failure>net.serenitybdd.core.exceptions.SerenityManagedException: Error communicating with the remote browser. It may have died.
+Build info: version: &apos;2.53.0&apos;, revision: &apos;35ae25b1534ae328c771e0856c93e187490ca824&apos;, time: &apos;2016-03-15 10:43:46&apos;
+System info: host: &apos;testing-worker-linux-docker-dc772945-3439-linux-2&apos;, ip: &apos;172.17.1.25&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;3.13.0-40-generic&apos;, java.version: &apos;1.8.0_31&apos;
+Driver info: driver.version: RemoteWebDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=31.0, platform=LINUX, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: eda9672f-b1f5-4d97-b270-477af4f1502f
+	at net.serenitybdd.core.exceptions.SerenityManagedException.detachedCopyOf(SerenityManagedException.java:20)
+	at net.thucydides.core.steps.StepInterceptor.runTestStep(StepInterceptor.java:317)
+	at net.thucydides.core.steps.StepInterceptor.testStepResult(StepInterceptor.java:130)
+	at net.thucydides.core.steps.StepInterceptor.intercept(StepInterceptor.java:57)
+	at bla.tm.steps.products_and_docs.PD_SDKsSteps$$EnhancerByCGLIB$$819c956c.maximiseBrowserWindow(&lt;generated&gt;)
+	at bla.tm.definitions.site.products_and_docs.PD_SDKsDefinition.openSDKsPage(PD_SDKsDefinition.java:22)
+	(reflection-invoke)
+	at org.jbehave.core.steps.StepCreator$ParametrisedStep.perform(StepCreator.java:599)
+	at org.jbehave.core.embedder.PerformableTree$FineSoFar.run(PerformableTree.java:340)
+...</failure>
+</scenario>
+</story>

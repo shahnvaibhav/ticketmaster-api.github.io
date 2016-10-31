@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<failsafe-summary result="255">
+  <exception>Error occured in starting fork, check output in log</exception>
+</failsafe-summary>

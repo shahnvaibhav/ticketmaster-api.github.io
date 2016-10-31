@@ -1,0 +1,24 @@
+<story path="stories/site/products_and_docs/PD_Tutorials_Widgets.story" title="">
+<narrative keyword="Narrative:">
+  <inOrderTo keyword="As a">test enfineer</inOrderTo>
+  <asA keyword="I want to">test Ticket Master Developer&apos;s site</asA>
+  <iWantTo keyword="So that">I test Tutorials Widgets Page of Ticket Master Developer&apos;s site</iWantTo>
+</narrative>
+<scenario keyword="Scenario:" title="(/products-and-docs/tutorials/widgets/) Verification for general page&apos;s elements">
+<step outcome="successful">Given open Tutorials Widgets page</step>
+<step outcome="successful">Then check general page elements for Tutorials Widgets Page, where DISQUS = <parameter>false</parameter> and LeftMenu = <parameter>true</parameter></step>
+</scenario>
+<scenario keyword="Scenario:" title="(/products-and-docs/tutorials/widgets/) Verification for all the page&apos;s links">
+<examples keyword="Examples:">
+<step>Given open Tutorials Widgets page</step>
+<step>When check visibility and click &lt;elementKey&gt; element of Tutorials Widgets page</step>
+<step>Then check that new page opened from Tutorials Widgets page has &lt;pageURL&gt; and &lt;pageTitle&gt;</step>
+<parameters>
+<names><name>elementKey</name><name>pageURL</name><name>pageTitle</name></names>
+<values><value>Adding Event Discovery Widget Button</value><value>{url}/products-and-docs/tutorials/widgets/Event_Discovery_Widget.html</value><value>//h1</value></values>
+<values><value>Adding Event Discovery Widget Header Link</value><value>{url}/products-and-docs/tutorials/widgets/Event_Discovery_Widget.html</value><value>//h1</value></values>
+<values><value>Adding Event Discovery Widget Image Link</value><value>{url}/products-and-docs/tutorials/widgets/Event_Discovery_Widget.html</value><value>//h1</value></values>
+</parameters>
+
+<example keyword="Example:">{elementKey=Adding Event Discovery Widget Button, pageURL={url}/products-and-docs/tutorials/widgets/Event_Discovery_Widget.html, pageTitle=//h1}</example>
+<step outcome="successful">Given open Tutorials Widgets page</step>

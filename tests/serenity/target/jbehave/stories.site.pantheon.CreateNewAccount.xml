@@ -1,0 +1,13 @@
+<story path="stories/site/pantheon/CreateNewAccount.story" title="">
+<narrative keyword="Narrative:">
+  <inOrderTo keyword="As a">test enfineer</inOrderTo>
+  <asA keyword="I want to">test Ticket Master Developer&apos;s site</asA>
+  <iWantTo keyword="So that">I test Pantheon Create New Account Page of Ticket Master Developer&apos;s site</iWantTo>
+</narrative>
+<scenario keyword="Scenario:" title="(developer-acct.ticketmaster.com/user/register) Verification for general page&apos;s elements">
+<step outcome="successful">Given open Home page</step>
+<step outcome="successful">When navigate to Pantheon LogIn page from Home page</step>
+<step outcome="successful">When navigate to Pantheon Create New Account page from LogIn page</step>
+<step outcome="successful">Then check general page elements for Pantheon Create New Account page</step>
+</scenario>
+</story>

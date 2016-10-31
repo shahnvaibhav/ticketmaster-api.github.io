@@ -1,0 +1,11 @@
+<story path="stories/site/partners/Partners_CertifiedPartners.story" title="">
+<narrative keyword="Narrative:">
+  <inOrderTo keyword="As a">test engineer</inOrderTo>
+  <asA keyword="I want to">test Ticket Master Developer&apos;s site</asA>
+  <iWantTo keyword="So that">I test Certified Partners Page of Ticket Master Developer&apos;s site</iWantTo>
+</narrative>
+<scenario keyword="Scenario:" title="(/partners/certified-partners/) Verification for general page&apos;s elements">
+<step outcome="successful">Given open Certified Partners page</step>
+<step outcome="successful">Then check general page elements for Certified Partners Page, where DISQUS = <parameter>false</parameter> and LeftMenu = <parameter>true</parameter></step>
+</scenario>
+</story>

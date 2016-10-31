@@ -1,0 +1,57 @@
+<story path="stories/site/products_and_docs/PD_Tutorials_EventSearch.story" title="">
+<narrative keyword="Narrative:">
+  <inOrderTo keyword="As a">test enfineer</inOrderTo>
+  <asA keyword="I want to">test Ticket Master Developer&apos;s site</asA>
+  <iWantTo keyword="So that">I test Tutorials EventSearch Page of Ticket Master Developer&apos;s site</iWantTo>
+</narrative>
+<scenario keyword="Scenario:" title="(/products-and-docs/tutorials/events-search/) Verification for general page&apos;s elements">
+<step outcome="successful">Given open Tutorials EventSearch page</step>
+<step outcome="successful">Then check general page elements for Tutorials EventSearch Page, where DISQUS = <parameter>false</parameter> and LeftMenu = <parameter>true</parameter></step>
+</scenario>
+<scenario keyword="Scenario:" title="(/products-and-docs/tutorials/events-search/) Verification for all the page&apos;s links">
+<examples keyword="Examples:">
+<step>Given open Tutorials EventSearch page</step>
+<step>When check visibility and click &lt;elementKey&gt; element of Tutorials EventSearch page</step>
+<step>Then check that new page opened from Tutorials EventSearch page has &lt;pageURL&gt; and &lt;pageTitle&gt;</step>
+<parameters>
+<names><name>elementKey</name><name>pageURL</name><name>pageTitle</name></names>
+<values><value>Locate Event On Map Widget Button</value><value>{url}/products-and-docs/tutorials/events-search/search_events_in_location.html</value><value>//h1</value></values>
+<values><value>Locate Event On Map Widget Header Link</value><value>{url}/products-and-docs/tutorials/events-search/search_events_in_location.html</value><value>//h1</value></values>
+<values><value>Locate Event On Map Widget Image Link</value><value>{url}/products-and-docs/tutorials/events-search/search_events_in_location.html</value><value>//h1</value></values>
+<values><value>Get Started WIth Discovery API Widget Button</value><value>{url}/products-and-docs/tutorials/events-search/search_events_with_discovery_api.html</value><value>//h1</value></values>
+<values><value>Get Started WIth Discovery API Widget Header Link</value><value>{url}/products-and-docs/tutorials/events-search/search_events_with_discovery_api.html</value><value>//h1</value></values>
+<values><value>Get Started WIth Discovery API Widget Image Link</value><value>{url}/products-and-docs/tutorials/events-search/search_events_with_discovery_api.html</value><value>//h1</value></values>
+</parameters>
+
+<example keyword="Example:">{elementKey=Locate Event On Map Widget Button, pageURL={url}/products-and-docs/tutorials/events-search/search_events_in_location.html, pageTitle=//h1}</example>
+<step outcome="successful">Given open Tutorials EventSearch page</step>
+<step outcome="successful">When check visibility and click <parameter>Locate Event On Map Widget Button</parameter> element of Tutorials EventSearch page</step>
+<step outcome="successful">Then check that new page opened from Tutorials EventSearch page has <parameter>{url}/products-and-docs/tutorials/events-search/search_events_in_location.html</parameter> and <parameter>//h1</parameter></step>
+
+<example keyword="Example:">{elementKey=Locate Event On Map Widget Header Link, pageURL={url}/products-and-docs/tutorials/events-search/search_events_in_location.html, pageTitle=//h1}</example>
+<step outcome="successful">Given open Tutorials EventSearch page</step>
+<step outcome="successful">When check visibility and click <parameter>Locate Event On Map Widget Header Link</parameter> element of Tutorials EventSearch page</step>
+<step outcome="successful">Then check that new page opened from Tutorials EventSearch page has <parameter>{url}/products-and-docs/tutorials/events-search/search_events_in_location.html</parameter> and <parameter>//h1</parameter></step>
+
+<example keyword="Example:">{elementKey=Locate Event On Map Widget Image Link, pageURL={url}/products-and-docs/tutorials/events-search/search_events_in_location.html, pageTitle=//h1}</example>
+<step outcome="successful">Given open Tutorials EventSearch page</step>
+<step outcome="successful">When check visibility and click <parameter>Locate Event On Map Widget Image Link</parameter> element of Tutorials EventSearch page</step>
+<step outcome="successful">Then check that new page opened from Tutorials EventSearch page has <parameter>{url}/products-and-docs/tutorials/events-search/search_events_in_location.html</parameter> and <parameter>//h1</parameter></step>
+
+<example keyword="Example:">{elementKey=Get Started WIth Discovery API Widget Button, pageURL={url}/products-and-docs/tutorials/events-search/search_events_with_discovery_api.html, pageTitle=//h1}</example>
+<step outcome="successful">Given open Tutorials EventSearch page</step>
+<step outcome="successful">When check visibility and click <parameter>Get Started WIth Discovery API Widget Button</parameter> element of Tutorials EventSearch page</step>
+<step outcome="successful">Then check that new page opened from Tutorials EventSearch page has <parameter>{url}/products-and-docs/tutorials/events-search/search_events_with_discovery_api.html</parameter> and <parameter>//h1</parameter></step>
+
+<example keyword="Example:">{elementKey=Get Started WIth Discovery API Widget Header Link, pageURL={url}/products-and-docs/tutorials/events-search/search_events_with_discovery_api.html, pageTitle=//h1}</example>
+<step outcome="successful">Given open Tutorials EventSearch page</step>
+<step outcome="successful">When check visibility and click <parameter>Get Started WIth Discovery API Widget Header Link</parameter> element of Tutorials EventSearch page</step>
+<step outcome="successful">Then check that new page opened from Tutorials EventSearch page has <parameter>{url}/products-and-docs/tutorials/events-search/search_events_with_discovery_api.html</parameter> and <parameter>//h1</parameter></step>
+
+<example keyword="Example:">{elementKey=Get Started WIth Discovery API Widget Image Link, pageURL={url}/products-and-docs/tutorials/events-search/search_events_with_discovery_api.html, pageTitle=//h1}</example>
+<step outcome="successful">Given open Tutorials EventSearch page</step>
+<step outcome="successful">When check visibility and click <parameter>Get Started WIth Discovery API Widget Image Link</parameter> element of Tutorials EventSearch page</step>
+<step outcome="successful">Then check that new page opened from Tutorials EventSearch page has <parameter>{url}/products-and-docs/tutorials/events-search/search_events_with_discovery_api.html</parameter> and <parameter>//h1</parameter></step>
+</examples>
+</scenario>
+</story>

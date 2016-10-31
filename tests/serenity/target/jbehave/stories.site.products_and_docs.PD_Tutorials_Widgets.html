@@ -1,0 +1,37 @@
+<div class="story">
+<h1></h1>
+<div class="path">stories/site/products_and_docs/PD_Tutorials_Widgets.story</div>
+<div class="narrative"><h2>Narrative:</h2>
+<div class="element inOrderTo"><span class="keyword inOrderTo">As a</span> test enfineer</div>
+<div class="element asA"><span class="keyword asA">I want to</span> test Ticket Master Developer's site</div>
+<div class="element iWantTo"><span class="keyword iWantTo">So that</span> I test Tutorials Widgets Page of Ticket Master Developer's site</div>
+</div>
+<div class="scenario">
+<h2>Scenario: (/products-and-docs/tutorials/widgets/) Verification for general page's elements</h2>
+<div class="step successful">Given open Tutorials Widgets page</div>
+<div class="step successful">Then check general page elements for Tutorials Widgets Page, where DISQUS = <span class="step parameter">false</span> and LeftMenu = <span class="step parameter">true</span></div>
+</div>
+<div class="scenario">
+<h2>Scenario: (/products-and-docs/tutorials/widgets/) Verification for all the page's links</h2>
+<div class="examples">
+<h3>Examples:</h3>
+<div class="step">Given open Tutorials Widgets page</div>
+<div class="step">When check visibility and click &lt;elementKey&gt; element of Tutorials Widgets page</div>
+<div class="step">Then check that new page opened from Tutorials Widgets page has &lt;pageURL&gt; and &lt;pageTitle&gt;</div>
+<table>
+<thead>
+<tr>
+<th>elementKey</th><th>pageURL</th><th>pageTitle</th></tr>
+</thead>
+<tbody>
+<tr>
+<td>Adding Event Discovery Widget Button</td><td>{url}/products-and-docs/tutorials/widgets/Event_Discovery_Widget.html</td><td>//h1</td></tr>
+<tr>
+<td>Adding Event Discovery Widget Header Link</td><td>{url}/products-and-docs/tutorials/widgets/Event_Discovery_Widget.html</td><td>//h1</td></tr>
+<tr>
+<td>Adding Event Discovery Widget Image Link</td><td>{url}/products-and-docs/tutorials/widgets/Event_Discovery_Widget.html</td><td>//h1</td></tr>
+</tbody>
+</table>
+
+<h3 class="example">Example: {elementKey=Adding Event Discovery Widget Button, pageURL={url}/products-and-docs/tutorials/widgets/Event_Discovery_Widget.html, pageTitle=//h1}</h3>
+<div class="step successful">Given open Tutorials Widgets page</div>

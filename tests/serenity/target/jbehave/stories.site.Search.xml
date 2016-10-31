@@ -1,0 +1,23 @@
+<story path="stories/site/Search.story" title="">
+<narrative keyword="Narrative:">
+  <inOrderTo keyword="As a">test enfineer</inOrderTo>
+  <asA keyword="I want to">test Ticket Master Developer&apos;s site</asA>
+  <iWantTo keyword="So that">I test Search Page of Ticket Master Developer&apos;s site</iWantTo>
+</narrative>
+<scenario keyword="Scenario:" title="(/search/) Verification for general page&apos;s elements">
+<examples keyword="Examples:">
+<step>Given open Home page</step>
+<step>Given insert Search Parameter &lt;searchRequest&gt; and navigate to Search page</step>
+<step>Then check general page elements for Search Page, where DISQUS = false and LeftMenu = false</step>
+<parameters>
+<names><name>searchRequest</name></names>
+<values><value>test</value></values>
+</parameters>
+
+<example keyword="Example:">{searchRequest=test}</example>
+<step outcome="successful">Given open Home page</step>
+<step outcome="successful">Given insert Search Parameter <parameter>test</parameter> and navigate to Search page</step>
+<step outcome="successful">Then check general page elements for Search Page, where DISQUS = <parameter>false</parameter> and LeftMenu = <parameter>false</parameter></step>
+</examples>
+</scenario>
+</story>

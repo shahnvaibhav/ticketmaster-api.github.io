@@ -1,0 +1,23 @@
+<story path="stories/site/OpenSource.story" title="">
+<narrative keyword="Narrative:">
+  <inOrderTo keyword="As a">test enfineer</inOrderTo>
+  <asA keyword="I want to">test Ticket Master Developer&apos;s site</asA>
+  <iWantTo keyword="So that">I test Open Source Page of Ticket Master Developer&apos;s site</iWantTo>
+</narrative>
+<scenario keyword="Scenario:" title="(/blogs/) Verification for general page&apos;s elements">
+<examples keyword="Examples:">
+<step>Given open Home page</step>
+<step>When check visibility and click &lt;elementKey&gt; element of Home page</step>
+<step>Then check that new page opened from Home page has &lt;pageURL&gt; and &lt;pageTitle&gt;</step>
+<parameters>
+<names><name>elementKey</name><name>pageURL</name><name>pageTitle</name></names>
+<values><value>Open Source</value><value>http://code.ticketmaster.com/</value><value>//h1[@id=&apos;logo&apos;]</value></values>
+</parameters>
+
+<example keyword="Example:">{elementKey=Open Source, pageURL=http://code.ticketmaster.com/, pageTitle=//h1[@id=&apos;logo&apos;]}</example>
+<step outcome="successful">Given open Home page</step>
+<step outcome="successful">When check visibility and click <parameter>Open Source</parameter> element of Home page</step>
+<step outcome="successful">Then check that new page opened from Home page has <parameter>http://code.ticketmaster.com/</parameter> and <parameter>//h1[@id=&apos;logo&apos;]</parameter></step>
+</examples>
+</scenario>
+</story>

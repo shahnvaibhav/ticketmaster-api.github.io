@@ -1,0 +1,11 @@
+<story path="stories/site/products_and_docs/PD_Tutorials_EventSearch_SearchEventWithDiscoveryAPI.story" title="">
+<narrative keyword="Narrative:">
+  <inOrderTo keyword="As a">test enfineer</inOrderTo>
+  <asA keyword="I want to">test Ticket Master Developer&apos;s site</asA>
+  <iWantTo keyword="So that">I test Tutorials EventSearch SearchEventWithDiscoveryAPI Page of Ticket Master Developer&apos;s site</iWantTo>
+</narrative>
+<scenario keyword="Scenario:" title="(/products-and-docs/tutorials/events-search/search_events_with_discovery_api_html) Verification for general page&apos;s elements">
+<step outcome="successful">Given open Tutorials EventSearch SearchEventWithDiscoveryAPI page</step>
+<step outcome="successful">Then check general page elements for Tutorials EventSearch SearchEventWithDiscoveryAPI Page, where DISQUS = <parameter>true</parameter> and LeftMenu = <parameter>true</parameter></step>
+</scenario>
+</story>

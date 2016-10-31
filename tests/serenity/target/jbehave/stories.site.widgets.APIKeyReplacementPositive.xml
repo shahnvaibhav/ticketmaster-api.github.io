@@ -1,0 +1,100 @@
+<story path="stories/site/widgets/APIKeyReplacementPositive.story" title="">
+<meta>
+<property keyword="@" name="kb" value=""/>
+</meta>
+<narrative keyword="Narrative:">
+  <inOrderTo keyword="As a">test enfineer</inOrderTo>
+  <asA keyword="I want to">test Ticket Master Developer&apos;s site</asA>
+  <iWantTo keyword="So that">I test API Key is NOT replaced on the page</iWantTo>
+</narrative>
+<scenario keyword="Scenario:" title="(APi Key - Geting Started page) Placeholder is shown when user is not logged in">
+<step outcome="successful">Given open Getting Started page</step>
+<step outcome="successful">When User is not logged to site (Getting Started)</step>
+<step outcome="successful">Then check that API key is provided for all placeholders on Getting Started page</step>
+</scenario>
+<scenario keyword="Scenario:" title="(APi Key - Geting Started page) Custom API key is shown when user is logged in">
+<step outcome="successful">Given open Getting Started page</step>
+<step outcome="successful">When User is logged to site (Getting Started)</step>
+<step outcome="successful">Then check that API key is provided for all placeholders on Getting Started page</step>
+</scenario>
+<scenario keyword="Scenario:" title="(APi Key - Geting Started page) Placeholder is shown when user is not logged in">
+<step outcome="successful">Given open Getting Started page</step>
+<step outcome="successful">When User is not logged to site (Getting Started)</step>
+<step outcome="successful">Then check that API key is provided for all placeholders on Getting Started page</step>
+</scenario>
+<scenario keyword="Scenario:" title="(APi Key - Geting Started page) Custom API key is shown when user is logged in">
+<step outcome="successful">Given open Getting Started page</step>
+<step outcome="successful">When User is logged to site (Getting Started)</step>
+<step outcome="successful">Then check that API key is provided for all placeholders on Getting Started page</step>
+</scenario>
+<scenario keyword="Scenario:" title="(APi Key - Interactive API Console page) Placeholder is shown when user is not logged in">
+<step outcome="successful">Given open Interactive API Console page</step>
+<step outcome="successful">When User is not logged to site (Interactive API Console)</step>
+<step outcome="successful">Then check that API key is provided for all placeholders on Interactive API Console page</step>
+</scenario>
+<scenario keyword="Scenario:" title="(APi Key - Interactive API Console page) Custom API key is shown when user is logged in">
+<step outcome="successful">Given open Interactive API Console page</step>
+<step outcome="successful">When User is logged to site (Interactive API Console)</step>
+<step outcome="successful">Then check that API key is provided for all placeholders on Interactive API Console page</step>
+</scenario>
+<scenario keyword="Scenario:" title="(APi Key - API Explorer) Placeholder is shown when user is not logged in">
+<step outcome="successful">Given open API Explorer page</step>
+<step outcome="successful">When User is not logged to site (API Explorer)</step>
+<step outcome="successful">Then check that API key is provided for all placeholders on API Explorer page</step>
+</scenario>
+<scenario keyword="Scenario:" title="(APi Key - API Explorer) Custom API key is shown when user is logged in">
+<step outcome="successful">Given open API Explorer page</step>
+<step outcome="successful">When User is logged to site (API Explorer)</step>
+<step outcome="successful">Then check that API key is provided for all placeholders on API Explorer page</step>
+</scenario>
+<scenario keyword="Scenario:" title="(APi Key - Countdown Widget) Placeholder is shown when user is not logged in">
+<step outcome="successful">Given open Countdown Widget page</step>
+<step outcome="successful">When User is not logged to site (Countdown Widget)</step>
+<step outcome="successful">Then check that API key is provided for all placeholders on Countdown Widget page</step>
+</scenario>
+<scenario keyword="Scenario:" title="(APi Key - Countdown Widget) Custom API key is shown when user is logged in">
+<step outcome="successful">Given open Countdown Widget page</step>
+<step outcome="successful">When User is logged to site (Countdown Widget)</step>
+<step outcome="successful">Then check that API key is provided for all placeholders on Countdown Widget page</step>
+</scenario>
+<scenario keyword="Scenario:" title="(APi Key - Event Discovery Widget) Placeholder is shown when user is not logged in">
+<step outcome="successful">Given open Event Discovery Widget page</step>
+<step outcome="successful">When User is not logged to site (Event Discovery Widget)</step>
+<step outcome="successful">Then check that API key is provided for all placeholders on Event Discovery Widget page</step>
+</scenario>
+<scenario keyword="Scenario:" title="(APi Key - Event Discovery Widget) Custom API key is shown when user is logged in">
+<step outcome="successful">Given open Event Discovery Widget page</step>
+<step outcome="successful">When User is logged to site (Event Discovery Widget)</step>
+<step outcome="successful">Then check that API key is provided for all placeholders on Event Discovery Widget page</step>
+</scenario>
+<scenario keyword="Scenario:" title="(APi Key - Calendar Widget) Placeholder is shown when user is not logged in">
+<step outcome="successful">Given open Calendar Widget page</step>
+<step outcome="successful">When User is not logged to site (Calendar Widget)</step>
+<step outcome="successful">Then check that API key is provided for all placeholders on Calendar Widget page</step>
+</scenario>
+<scenario keyword="Scenario:" title="(APi Key - Calendar Widget) Custom API key is shown when user is logged in">
+<step outcome="successful">Given open Calendar Widget page</step>
+<step outcome="successful">When User is logged to site (Calendar Widget)</step>
+<step outcome="successful">Then check that API key is provided for all placeholders on Calendar Widget page</step>
+</scenario>
+<scenario keyword="Scenario:" title="(APi Key - Discovery API v2 page) Placeholder is shown when user is not logged in">
+<step outcome="successful">Given open Discovery API v2 page</step>
+<step outcome="successful">When User is not logged to site (Discovery API v2)</step>
+<step outcome="successful">Then check that API key is provided for all placeholders on Discovery API v2 page</step>
+</scenario>
+<scenario keyword="Scenario:" title="(APi Key - Discovery API v2 page) Custom API key is shown when user is logged in">
+<step outcome="successful">Given open Discovery API v2 page</step>
+<step outcome="successful">When User is logged to site (Discovery API v2)</step>
+<step outcome="successful">Then check that API key is provided for all placeholders on Discovery API v2 page</step>
+</scenario>
+<scenario keyword="Scenario:" title="(APi Key - Discovery API v1 page) Placeholder is shown when user is not logged in">
+<step outcome="successful">Given open Discovery API v1 page</step>
+<step outcome="successful">When User is not logged to site (Discovery API v1)</step>
+<step outcome="successful">Then check that API key is provided for all placeholders on Discovery API v1 page</step>
+</scenario>
+<scenario keyword="Scenario:" title="(APi Key - Discovery API v1 page) Custom API key is shown when user is logged in">
+<step outcome="successful">Given open Discovery API v1 page</step>
+<step outcome="successful">When User is logged to site (Discovery API v1)</step>
+<step outcome="successful">Then check that API key is provided for all placeholders on Discovery API v1 page</step>
+</scenario>
+</story>

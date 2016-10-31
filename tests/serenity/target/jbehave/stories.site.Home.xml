@@ -1,0 +1,97 @@
+<story path="stories/site/Home.story" title="">
+<narrative keyword="Narrative:">
+  <inOrderTo keyword="As a">test enfineer</inOrderTo>
+  <asA keyword="I want to">test Ticket Master Developer&apos;s site</asA>
+  <iWantTo keyword="So that">I test Home Page of Ticket Master Developer&apos;s site</iWantTo>
+</narrative>
+<scenario keyword="Scenario:" title="(/Home Page/) Verification for general page elements">
+<step outcome="successful">Given open Home page</step>
+<step outcome="successful">Then check general page elements for Home Page, where DISQUS = <parameter>false</parameter> and LeftMenu = <parameter>false</parameter></step>
+</scenario>
+<scenario keyword="Scenario:" title="(/Home Page/) Verification for twitter&apos;s list of events">
+<step outcome="successful">Given open Home page</step>
+<step outcome="successful">Then check that Twitter&apos;s list of events is shown</step>
+</scenario>
+<scenario keyword="Scenario:" title="(/Home Page/) Verification for all the page links">
+<examples keyword="Examples:">
+<step>Given open Home page</step>
+<step>When check visibility and click &lt;elementKey&gt; element of Home page</step>
+<step>Then check that new page opened from Home page has &lt;pageURL&gt; and &lt;elementLocation&gt;</step>
+<parameters>
+<names><name>elementKey</name><name>pageURL</name><name>elementLocation</name></names>
+<values><value>Get Your API Key</value><value>https://developer-acct.ticketmaster.com/user/login</value><value>//div[@class=&apos;text-wrapper col-lg-6 col-sm-12 col-xs-12&apos;]/h1[@class=&apos;only-desktop&apos;]</value></values>
+<values><value>Review Documentation</value><value>{url}/products-and-docs/apis/getting-started/</value><value>//h1</value></values>
+<values><value>Explore The API</value><value>{url}/api-explorer/</value><value>//h1</value></values>
+<values><value>Android</value><value>http://code.ticketmaster.com/#android-projects</value><value>//h1</value></values>
+<values><value>Backend</value><value>http://code.ticketmaster.com/#backend-projects</value><value>//h1</value></values>
+<values><value>iOS</value><value>http://code.ticketmaster.com/#iOS-projects</value><value>//h1</value></values>
+<values><value>Web</value><value>http://code.ticketmaster.com/#web-projects</value><value>//h1</value></values>
+<values><value>Tech blog</value><value>https://tech.ticketmaster.com/</value><value>//h1[@class=&apos;site-title&apos;]/a</value></values>
+<values><value>Medium Publication</value><value>https://medium.com/ticketmaster-tech</value><value>//h2[text()=&apos;Because Engineers are Fans Too!&apos;]</value></values>
+<values><value>Partner API</value><value>{url}/products-and-docs/apis/partner/</value><value>//h1</value></values>
+<values><value>Deals API</value><value>{url}/products-and-docs/apis/deals-api/</value><value>//h1</value></values>
+<values><value>Legacy docs</value><value>http://apidocs.ticketmaster.com/</value><value>//td[@class=&apos;WikiLogoName&apos;]/a</value></values>
+</parameters>
+
+<example keyword="Example:">{elementKey=Get Your API Key, pageURL=https://developer-acct.ticketmaster.com/user/login, elementLocation=//div[@class=&apos;text-wrapper col-lg-6 col-sm-12 col-xs-12&apos;]/h1[@class=&apos;only-desktop&apos;]}</example>
+<step outcome="successful">Given open Home page</step>
+<step outcome="successful">When check visibility and click <parameter>Get Your API Key</parameter> element of Home page</step>
+<step outcome="successful">Then check that new page opened from Home page has <parameter>https://developer-acct.ticketmaster.com/user/login</parameter> and <parameter>//div[@class=&apos;text-wrapper col-lg-6 col-sm-12 col-xs-12&apos;]/h1[@class=&apos;only-desktop&apos;]</parameter></step>
+
+<example keyword="Example:">{elementKey=Review Documentation, pageURL={url}/products-and-docs/apis/getting-started/, elementLocation=//h1}</example>
+<step outcome="successful">Given open Home page</step>
+<step outcome="successful">When check visibility and click <parameter>Review Documentation</parameter> element of Home page</step>
+<step outcome="successful">Then check that new page opened from Home page has <parameter>{url}/products-and-docs/apis/getting-started/</parameter> and <parameter>//h1</parameter></step>
+
+<example keyword="Example:">{elementKey=Explore The API, pageURL={url}/api-explorer/, elementLocation=//h1}</example>
+<step outcome="successful">Given open Home page</step>
+<step outcome="successful">When check visibility and click <parameter>Explore The API</parameter> element of Home page</step>
+<step outcome="successful">Then check that new page opened from Home page has <parameter>{url}/api-explorer/</parameter> and <parameter>//h1</parameter></step>
+
+<example keyword="Example:">{elementKey=Android, pageURL=http://code.ticketmaster.com/#android-projects, elementLocation=//h1}</example>
+<step outcome="successful">Given open Home page</step>
+<step outcome="successful">When check visibility and click <parameter>Android</parameter> element of Home page</step>
+<step outcome="successful">Then check that new page opened from Home page has <parameter>http://code.ticketmaster.com/#android-projects</parameter> and <parameter>//h1</parameter></step>
+
+<example keyword="Example:">{elementKey=Backend, pageURL=http://code.ticketmaster.com/#backend-projects, elementLocation=//h1}</example>
+<step outcome="successful">Given open Home page</step>
+<step outcome="successful">When check visibility and click <parameter>Backend</parameter> element of Home page</step>
+<step outcome="successful">Then check that new page opened from Home page has <parameter>http://code.ticketmaster.com/#backend-projects</parameter> and <parameter>//h1</parameter></step>
+
+<example keyword="Example:">{elementKey=iOS, pageURL=http://code.ticketmaster.com/#iOS-projects, elementLocation=//h1}</example>
+<step outcome="successful">Given open Home page</step>
+<step outcome="successful">When check visibility and click <parameter>iOS</parameter> element of Home page</step>
+<step outcome="successful">Then check that new page opened from Home page has <parameter>http://code.ticketmaster.com/#iOS-projects</parameter> and <parameter>//h1</parameter></step>
+
+<example keyword="Example:">{elementKey=Web, pageURL=http://code.ticketmaster.com/#web-projects, elementLocation=//h1}</example>
+<step outcome="successful">Given open Home page</step>
+<step outcome="successful">When check visibility and click <parameter>Web</parameter> element of Home page</step>
+<step outcome="successful">Then check that new page opened from Home page has <parameter>http://code.ticketmaster.com/#web-projects</parameter> and <parameter>//h1</parameter></step>
+
+<example keyword="Example:">{elementKey=Tech blog, pageURL=https://tech.ticketmaster.com/, elementLocation=//h1[@class=&apos;site-title&apos;]/a}</example>
+<step outcome="successful">Given open Home page</step>
+<step outcome="successful">When check visibility and click <parameter>Tech blog</parameter> element of Home page</step>
+<step outcome="successful">Then check that new page opened from Home page has <parameter>https://tech.ticketmaster.com/</parameter> and <parameter>//h1[@class=&apos;site-title&apos;]/a</parameter></step>
+
+<example keyword="Example:">{elementKey=Medium Publication, pageURL=https://medium.com/ticketmaster-tech, elementLocation=//h2[text()=&apos;Because Engineers are Fans Too!&apos;]}</example>
+<step outcome="successful">Given open Home page</step>
+<step outcome="successful">When check visibility and click <parameter>Medium Publication</parameter> element of Home page</step>
+<step outcome="successful">Then check that new page opened from Home page has <parameter>https://medium.com/ticketmaster-tech</parameter> and <parameter>//h2[text()=&apos;Because Engineers are Fans Too!&apos;]</parameter></step>
+
+<example keyword="Example:">{elementKey=Partner API, pageURL={url}/products-and-docs/apis/partner/, elementLocation=//h1}</example>
+<step outcome="successful">Given open Home page</step>
+<step outcome="successful">When check visibility and click <parameter>Partner API</parameter> element of Home page</step>
+<step outcome="successful">Then check that new page opened from Home page has <parameter>{url}/products-and-docs/apis/partner/</parameter> and <parameter>//h1</parameter></step>
+
+<example keyword="Example:">{elementKey=Deals API, pageURL={url}/products-and-docs/apis/deals-api/, elementLocation=//h1}</example>
+<step outcome="successful">Given open Home page</step>
+<step outcome="successful">When check visibility and click <parameter>Deals API</parameter> element of Home page</step>
+<step outcome="successful">Then check that new page opened from Home page has <parameter>{url}/products-and-docs/apis/deals-api/</parameter> and <parameter>//h1</parameter></step>
+
+<example keyword="Example:">{elementKey=Legacy docs, pageURL=http://apidocs.ticketmaster.com/, elementLocation=//td[@class=&apos;WikiLogoName&apos;]/a}</example>
+<step outcome="successful">Given open Home page</step>
+<step outcome="successful">When check visibility and click <parameter>Legacy docs</parameter> element of Home page</step>
+<step outcome="successful">Then check that new page opened from Home page has <parameter>http://apidocs.ticketmaster.com/</parameter> and <parameter>//td[@class=&apos;WikiLogoName&apos;]/a</parameter></step>
+</examples>
+</scenario>
+</story>

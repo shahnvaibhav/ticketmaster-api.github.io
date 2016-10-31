@@ -1,0 +1,11 @@
+<story path="stories/site/products_and_docs/PD_TopPicksAPI.story" title="">
+<narrative keyword="Narrative:">
+  <inOrderTo keyword="As a">test enfineer</inOrderTo>
+  <asA keyword="I want to">test Ticket Master Developer&apos;s site</asA>
+  <iWantTo keyword="So that">I test Top Picks API Page of Ticket Master Developer&apos;s site</iWantTo>
+</narrative>
+<scenario keyword="Scenario:" title="(/api-explorer/) Verification for general page&apos;s elements">
+<step outcome="successful">Given open Top Picks API page</step>
+<step outcome="successful">Then check general page elements for Top Picks API Page, where DISQUS = <parameter>true</parameter> and LeftMenu = <parameter>true</parameter></step>
+</scenario>
+</story>

@@ -1,0 +1,120 @@
+<div class="story">
+<h1></h1>
+<div class="path">stories/site/Home.story</div>
+<div class="narrative"><h2>Narrative:</h2>
+<div class="element inOrderTo"><span class="keyword inOrderTo">As a</span> test enfineer</div>
+<div class="element asA"><span class="keyword asA">I want to</span> test Ticket Master Developer's site</div>
+<div class="element iWantTo"><span class="keyword iWantTo">So that</span> I test Home Page of Ticket Master Developer's site</div>
+</div>
+<div class="scenario">
+<h2>Scenario: (/Home Page/) Verification for general page elements</h2>
+<div class="step successful">Given open Home page</div>
+<div class="step successful">Then check general page elements for Home Page, where DISQUS = <span class="step parameter">false</span> and LeftMenu = <span class="step parameter">false</span></div>
+</div>
+<div class="scenario">
+<h2>Scenario: (/Home Page/) Verification for twitter's list of events</h2>
+<div class="step successful">Given open Home page</div>
+<div class="step successful">Then check that Twitter's list of events is shown</div>
+</div>
+<div class="scenario">
+<h2>Scenario: (/Home Page/) Verification for all the page links</h2>
+<div class="examples">
+<h3>Examples:</h3>
+<div class="step">Given open Home page</div>
+<div class="step">When check visibility and click &lt;elementKey&gt; element of Home page</div>
+<div class="step">Then check that new page opened from Home page has &lt;pageURL&gt; and &lt;elementLocation&gt;</div>
+<table>
+<thead>
+<tr>
+<th>elementKey</th><th>pageURL</th><th>elementLocation</th></tr>
+</thead>
+<tbody>
+<tr>
+<td>Get Your API Key</td><td>https://developer-acct.ticketmaster.com/user/login</td><td>//div[@class='text-wrapper col-lg-6 col-sm-12 col-xs-12']/h1[@class='only-desktop']</td></tr>
+<tr>
+<td>Review Documentation</td><td>{url}/products-and-docs/apis/getting-started/</td><td>//h1</td></tr>
+<tr>
+<td>Explore The API</td><td>{url}/api-explorer/</td><td>//h1</td></tr>
+<tr>
+<td>Android</td><td>http://code.ticketmaster.com/#android-projects</td><td>//h1</td></tr>
+<tr>
+<td>Backend</td><td>http://code.ticketmaster.com/#backend-projects</td><td>//h1</td></tr>
+<tr>
+<td>iOS</td><td>http://code.ticketmaster.com/#iOS-projects</td><td>//h1</td></tr>
+<tr>
+<td>Web</td><td>http://code.ticketmaster.com/#web-projects</td><td>//h1</td></tr>
+<tr>
+<td>Tech blog</td><td>https://tech.ticketmaster.com/</td><td>//h1[@class='site-title']/a</td></tr>
+<tr>
+<td>Medium Publication</td><td>https://medium.com/ticketmaster-tech</td><td>//h2[text()='Because Engineers are Fans Too!']</td></tr>
+<tr>
+<td>Partner API</td><td>{url}/products-and-docs/apis/partner/</td><td>//h1</td></tr>
+<tr>
+<td>Deals API</td><td>{url}/products-and-docs/apis/deals-api/</td><td>//h1</td></tr>
+<tr>
+<td>Legacy docs</td><td>http://apidocs.ticketmaster.com/</td><td>//td[@class='WikiLogoName']/a</td></tr>
+</tbody>
+</table>
+
+<h3 class="example">Example: {elementKey=Get Your API Key, pageURL=https://developer-acct.ticketmaster.com/user/login, elementLocation=//div[@class='text-wrapper col-lg-6 col-sm-12 col-xs-12']/h1[@class='only-desktop']}</h3>
+<div class="step successful">Given open Home page</div>
+<div class="step successful">When check visibility and click <span class="step parameter">Get Your API Key</span> element of Home page</div>
+<div class="step successful">Then check that new page opened from Home page has <span class="step parameter">https://developer-acct.ticketmaster.com/user/login</span> and <span class="step parameter">//div[@class='text-wrapper col-lg-6 col-sm-12 col-xs-12']/h1[@class='only-desktop']</span></div>
+
+<h3 class="example">Example: {elementKey=Review Documentation, pageURL={url}/products-and-docs/apis/getting-started/, elementLocation=//h1}</h3>
+<div class="step successful">Given open Home page</div>
+<div class="step successful">When check visibility and click <span class="step parameter">Review Documentation</span> element of Home page</div>
+<div class="step successful">Then check that new page opened from Home page has <span class="step parameter">{url}/products-and-docs/apis/getting-started/</span> and <span class="step parameter">//h1</span></div>
+
+<h3 class="example">Example: {elementKey=Explore The API, pageURL={url}/api-explorer/, elementLocation=//h1}</h3>
+<div class="step successful">Given open Home page</div>
+<div class="step successful">When check visibility and click <span class="step parameter">Explore The API</span> element of Home page</div>
+<div class="step successful">Then check that new page opened from Home page has <span class="step parameter">{url}/api-explorer/</span> and <span class="step parameter">//h1</span></div>
+
+<h3 class="example">Example: {elementKey=Android, pageURL=http://code.ticketmaster.com/#android-projects, elementLocation=//h1}</h3>
+<div class="step successful">Given open Home page</div>
+<div class="step successful">When check visibility and click <span class="step parameter">Android</span> element of Home page</div>
+<div class="step successful">Then check that new page opened from Home page has <span class="step parameter">http://code.ticketmaster.com/#android-projects</span> and <span class="step parameter">//h1</span></div>
+
+<h3 class="example">Example: {elementKey=Backend, pageURL=http://code.ticketmaster.com/#backend-projects, elementLocation=//h1}</h3>
+<div class="step successful">Given open Home page</div>
+<div class="step successful">When check visibility and click <span class="step parameter">Backend</span> element of Home page</div>
+<div class="step successful">Then check that new page opened from Home page has <span class="step parameter">http://code.ticketmaster.com/#backend-projects</span> and <span class="step parameter">//h1</span></div>
+
+<h3 class="example">Example: {elementKey=iOS, pageURL=http://code.ticketmaster.com/#iOS-projects, elementLocation=//h1}</h3>
+<div class="step successful">Given open Home page</div>
+<div class="step successful">When check visibility and click <span class="step parameter">iOS</span> element of Home page</div>
+<div class="step successful">Then check that new page opened from Home page has <span class="step parameter">http://code.ticketmaster.com/#iOS-projects</span> and <span class="step parameter">//h1</span></div>
+
+<h3 class="example">Example: {elementKey=Web, pageURL=http://code.ticketmaster.com/#web-projects, elementLocation=//h1}</h3>
+<div class="step successful">Given open Home page</div>
+<div class="step successful">When check visibility and click <span class="step parameter">Web</span> element of Home page</div>
+<div class="step successful">Then check that new page opened from Home page has <span class="step parameter">http://code.ticketmaster.com/#web-projects</span> and <span class="step parameter">//h1</span></div>
+
+<h3 class="example">Example: {elementKey=Tech blog, pageURL=https://tech.ticketmaster.com/, elementLocation=//h1[@class='site-title']/a}</h3>
+<div class="step successful">Given open Home page</div>
+<div class="step successful">When check visibility and click <span class="step parameter">Tech blog</span> element of Home page</div>
+<div class="step successful">Then check that new page opened from Home page has <span class="step parameter">https://tech.ticketmaster.com/</span> and <span class="step parameter">//h1[@class='site-title']/a</span></div>
+
+<h3 class="example">Example: {elementKey=Medium Publication, pageURL=https://medium.com/ticketmaster-tech, elementLocation=//h2[text()='Because Engineers are Fans Too!']}</h3>
+<div class="step successful">Given open Home page</div>
+<div class="step successful">When check visibility and click <span class="step parameter">Medium Publication</span> element of Home page</div>
+<div class="step successful">Then check that new page opened from Home page has <span class="step parameter">https://medium.com/ticketmaster-tech</span> and <span class="step parameter">//h2[text()='Because Engineers are Fans Too!']</span></div>
+
+<h3 class="example">Example: {elementKey=Partner API, pageURL={url}/products-and-docs/apis/partner/, elementLocation=//h1}</h3>
+<div class="step successful">Given open Home page</div>
+<div class="step successful">When check visibility and click <span class="step parameter">Partner API</span> element of Home page</div>
+<div class="step successful">Then check that new page opened from Home page has <span class="step parameter">{url}/products-and-docs/apis/partner/</span> and <span class="step parameter">//h1</span></div>
+
+<h3 class="example">Example: {elementKey=Deals API, pageURL={url}/products-and-docs/apis/deals-api/, elementLocation=//h1}</h3>
+<div class="step successful">Given open Home page</div>
+<div class="step successful">When check visibility and click <span class="step parameter">Deals API</span> element of Home page</div>
+<div class="step successful">Then check that new page opened from Home page has <span class="step parameter">{url}/products-and-docs/apis/deals-api/</span> and <span class="step parameter">//h1</span></div>
+
+<h3 class="example">Example: {elementKey=Legacy docs, pageURL=http://apidocs.ticketmaster.com/, elementLocation=//td[@class='WikiLogoName']/a}</h3>
+<div class="step successful">Given open Home page</div>
+<div class="step successful">When check visibility and click <span class="step parameter">Legacy docs</span> element of Home page</div>
+<div class="step successful">Then check that new page opened from Home page has <span class="step parameter">http://apidocs.ticketmaster.com/</span> and <span class="step parameter">//td[@class='WikiLogoName']/a</span></div>
+</div>
+</div>
+</div>

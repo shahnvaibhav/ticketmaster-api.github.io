@@ -1,0 +1,11 @@
+<story path="stories/site/products_and_docs/PD_Widget_WordPress.story" title="">
+<narrative keyword="Narrative:">
+  <inOrderTo keyword="As a">test engineer</inOrderTo>
+  <asA keyword="I want to">test Ticket Master Developer&apos;s site</asA>
+  <iWantTo keyword="So that">I test WordPress Widget Page of Ticket Master Developer&apos;s site</iWantTo>
+</narrative>
+<scenario keyword="Scenario:" title="(/products-and-docs/widgets/wordpress/) Verification for general page&apos;s elements">
+<step outcome="successful">Given open WordPress Widget page</step>
+<step outcome="successful">Then check general page elements for WordPress Widget Page, where DISQUS = <parameter>true</parameter> and LeftMenu = <parameter>true</parameter></step>
+</scenario>
+</story>

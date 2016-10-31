@@ -1,0 +1,63 @@
+<story path="stories/site/widgets/SummaryWidget.story" title="">
+<narrative keyword="Narrative:">
+  <inOrderTo keyword="As a">test enfineer</inOrderTo>
+  <asA keyword="I want to">test Ticket Master Developer&apos;s site</asA>
+  <iWantTo keyword="So that">I test Summary Widget for Tutorials Widgets Page of Ticket Master Developer&apos;s site</iWantTo>
+</narrative>
+<scenario keyword="Scenario:" title="(summary widget) TKMDPA-870 Summary widget check for Getting Started page">
+<step outcome="successful">Given open Getting Started page</step>
+<step outcome="successful">Then Summary widget is shown for Getting Started page</step>
+</scenario>
+<scenario keyword="Scenario:" title="(summary widget) TKMDPA-870 Summary widget check for Home page">
+<step outcome="failed" keyword="FAILED">Given open Home page<failure>net.serenitybdd.core.exceptions.SerenityManagedException: Error communicating with the remote browser. It may have died.
+Build info: version: &apos;2.53.0&apos;, revision: &apos;35ae25b1534ae328c771e0856c93e187490ca824&apos;, time: &apos;2016-03-15 10:43:46&apos;
+System info: host: &apos;testing-worker-linux-docker-dc772945-3439-linux-2&apos;, ip: &apos;172.17.1.25&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;3.13.0-40-generic&apos;, java.version: &apos;1.8.0_31&apos;
+Driver info: driver.version: RemoteWebDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=31.0, platform=LINUX, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 4b3b7014-84b0-4414-98e6-435da0d85135</failure></step>
+<step outcome="notPerformed" keyword="NOT PERFORMED">Then Summary widget is shown for Home page</step>
+<failure>net.serenitybdd.core.exceptions.SerenityManagedException: Error communicating with the remote browser. It may have died.
+Build info: version: &apos;2.53.0&apos;, revision: &apos;35ae25b1534ae328c771e0856c93e187490ca824&apos;, time: &apos;2016-03-15 10:43:46&apos;
+System info: host: &apos;testing-worker-linux-docker-dc772945-3439-linux-2&apos;, ip: &apos;172.17.1.25&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;3.13.0-40-generic&apos;, java.version: &apos;1.8.0_31&apos;
+Driver info: driver.version: RemoteWebDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=31.0, platform=LINUX, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 4b3b7014-84b0-4414-98e6-435da0d85135
+	at net.serenitybdd.core.exceptions.SerenityManagedException.detachedCopyOf(SerenityManagedException.java:20)
+	at net.thucydides.core.steps.StepInterceptor.runTestStep(StepInterceptor.java:317)
+	at net.thucydides.core.steps.StepInterceptor.testStepResult(StepInterceptor.java:130)
+	at net.thucydides.core.steps.StepInterceptor.intercept(StepInterceptor.java:57)
+	at bla.tm.steps.HomePageSteps$$EnhancerByCGLIB$$6237a460.openPage(&lt;generated&gt;)
+	at bla.tm.definitions.site.HomePageDefinition.openHomePage(HomePageDefinition.java:28)
+	at sun.reflect.GeneratedMethodAccessor14.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:483)
+	at org.jbehave.core.steps.StepCreator$ParametrisedStep.perform(StepCreator.java:599)
+	at org.jbehave.core.embedder.PerformableTree$FineSoFar.run(PerformableTree.java:340)
+...</failure>
+</scenario>
+<scenario keyword="Scenario:" title="(summary widget) TKMDPA-870 Summary widget check for API Explorer page">
+<step outcome="failed" keyword="FAILED">Given open API Explorer page<failure>net.serenitybdd.core.exceptions.SerenityManagedException: Error communicating with the remote browser. It may have died.
+Build info: version: &apos;2.53.0&apos;, revision: &apos;35ae25b1534ae328c771e0856c93e187490ca824&apos;, time: &apos;2016-03-15 10:43:46&apos;
+System info: host: &apos;testing-worker-linux-docker-dc772945-3439-linux-2&apos;, ip: &apos;172.17.1.25&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;3.13.0-40-generic&apos;, java.version: &apos;1.8.0_31&apos;
+Driver info: driver.version: FirefoxDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=31.0, platform=LINUX, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: e5bdd96d-705e-44f0-abcf-83d06e3d2bcc</failure></step>
+<step outcome="notPerformed" keyword="NOT PERFORMED">Then Summary widget is shown for API Explorer page</step>
+<failure>net.serenitybdd.core.exceptions.SerenityManagedException: Error communicating with the remote browser. It may have died.
+Build info: version: &apos;2.53.0&apos;, revision: &apos;35ae25b1534ae328c771e0856c93e187490ca824&apos;, time: &apos;2016-03-15 10:43:46&apos;
+System info: host: &apos;testing-worker-linux-docker-dc772945-3439-linux-2&apos;, ip: &apos;172.17.1.25&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;3.13.0-40-generic&apos;, java.version: &apos;1.8.0_31&apos;
+Driver info: driver.version: FirefoxDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=31.0, platform=LINUX, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: e5bdd96d-705e-44f0-abcf-83d06e3d2bcc
+	at net.serenitybdd.core.exceptions.SerenityManagedException.detachedCopyOf(SerenityManagedException.java:20)
+	at net.thucydides.core.steps.StepInterceptor.runTestStep(StepInterceptor.java:317)
+	at net.thucydides.core.steps.StepInterceptor.testStepResult(StepInterceptor.java:130)
+	at net.thucydides.core.steps.StepInterceptor.intercept(StepInterceptor.java:57)
+	at bla.tm.steps.products_and_docs.PD_APIExplorerSteps$$EnhancerByCGLIB$$ed14d150.openPage(&lt;generated&gt;)
+	at bla.tm.definitions.site.products_and_docs.PD_APIExplorerDefinition.openAPIExplorerPage(PD_APIExplorerDefinition.java:28)
+	(reflection-invoke)
+	at org.jbehave.core.steps.StepCreator$ParametrisedStep.perform(StepCreator.java:599)
+	at org.jbehave.core.embedder.PerformableTree$FineSoFar.run(PerformableTree.java:340)
+...</failure>
+</scenario>
+</story>

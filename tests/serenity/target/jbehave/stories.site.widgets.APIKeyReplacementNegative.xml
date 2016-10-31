@@ -1,0 +1,31 @@
+<story path="stories/site/widgets/APIKeyReplacementNegative.story" title="">
+<narrative keyword="Narrative:">
+  <inOrderTo keyword="As a">test enfineer</inOrderTo>
+  <asA keyword="I want to">test Ticket Master Developer&apos;s site</asA>
+  <iWantTo keyword="So that">I test API Key is NOT replaced on the page</iWantTo>
+</narrative>
+<scenario keyword="Scenario:" title="(APi Key - Commerce API page) Custom API key is not replaced when user is logged in">
+<step outcome="successful">Given open Commerce API page</step>
+<step outcome="successful">When User is logged to site (Commerce API)</step>
+<step outcome="successful">Then check that API key is provided for all placeholders on Commerce API page</step>
+</scenario>
+<scenario keyword="Scenario:" title="(APi Key - Top Picks API page) Custom API key is not replaced when user is logged in">
+<step outcome="successful">Given open Top Picks API page</step>
+<step outcome="successful">When User is logged to site (Top Picks API)</step>
+<step outcome="successful">Then check that API key is provided for all placeholders on Top Picks API page</step>
+</scenario>
+<scenario keyword="Scenario:" title="(APi Key - Season Ticketing API page) Custom API key is not replaced when user is logged in">
+<step outcome="successful">Given open Season Ticketing API page</step>
+<step outcome="successful">When User is logged to site (Season Ticketing API)</step>
+<step outcome="successful">Then check that API key is provided for all placeholders on Season Ticketing API page</step>
+</scenario>
+<scenario keyword="Scenario:" title="(APi Key - International Discovery API page) Custom API key is not replaced when user is logged in">
+<step outcome="successful">Given open International Discovery API page</step>
+<step outcome="successful">When User is logged to site (International Discovery API)</step>
+<step outcome="successful">Then check that API key is provided for all placeholders on International Discovery API page</step>
+</scenario>
+<scenario keyword="Scenario:" title="(APi Key - Publish API page) Custom API key is not replaced when user is logged in">
+<step outcome="successful">Given open Publish API page</step>
+<step outcome="successful">When User is logged to site (Publish API)</step>
+<cancelled keyword="STORY CANCELLED" durationKeyword="DURATION" durationInSecs="301"/>
+</story>
